@@ -34,7 +34,7 @@ colnames(y_test)<-"activityId"
 colnames(subject_test)<-"subjectId"
 colnames(activity_labels)<-c('activityId','activityType')
 
-# 1.3. Merg all data in one set:
+# 2.3. Merg all data in one set:
 mrg_train<-cbind(y_train, subject_train, x_train)
 mrg_test<-cbind(y_test, subject_test, x_test)
 set_all_in_one<-rbind(mrg_train, mrg_test)
