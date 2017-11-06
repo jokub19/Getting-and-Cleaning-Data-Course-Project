@@ -64,3 +64,4 @@ tidy2<-tidy2[order(tidy2$subjectId, tidy2$activityId),]
 
 # 6.2. Write second tidy data set in txt file
 write.table(tidy2, "tidy2.txt", row.name=FALSE)
+read.table("tidy2.txt")
